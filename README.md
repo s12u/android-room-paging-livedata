@@ -1,4 +1,4 @@
-# Android Paging library with Room+Livedata  example
+# Android Paging library with Room+LiveData  example
 
 A simple android application implementing Paging library with Room persistence library.
 ## Getting Started
