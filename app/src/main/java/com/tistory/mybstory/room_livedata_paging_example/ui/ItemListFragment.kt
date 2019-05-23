@@ -1,4 +1,4 @@
-package com.tistory.mybstory.room_livedata_paging_example
+package com.tistory.mybstory.room_livedata_paging_example.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import com.tistory.mybstory.room_livedata_paging_example.R
 import kotlinx.android.synthetic.main.fragment_list.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

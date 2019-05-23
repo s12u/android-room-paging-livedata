@@ -1,4 +1,4 @@
-package com.tistory.mybstory.room_livedata_paging_example
+package com.tistory.mybstory.room_livedata_paging_example.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,9 +6,13 @@ import android.view.ViewGroup
 import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.tistory.mybstory.room_livedata_paging_example.R
+import com.tistory.mybstory.room_livedata_paging_example.data.model.Item
 import kotlinx.android.synthetic.main.layout_item.view.*
 
-class ItemListAdapter : PagedListAdapter<Item, ItemListAdapter.ItemViewHolder>(diffCallback) {
+class ItemListAdapter : PagedListAdapter<Item, ItemListAdapter.ItemViewHolder>(
+    diffCallback
+) {
 
     private var inflater: LayoutInflater? = null
 
@@ -16,7 +20,13 @@ class ItemListAdapter : PagedListAdapter<Item, ItemListAdapter.ItemViewHolder>(d
         if (inflater == null) {
             inflater = LayoutInflater.from(parent.context)
         }
-        return ItemViewHolder(inflater!!.inflate(R.layout.layout_item, parent, false))
+        return ItemViewHolder(
+            inflater!!.inflate(
+                R.layout.layout_item,
+                parent,
+                false
+            )
+        )
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) =

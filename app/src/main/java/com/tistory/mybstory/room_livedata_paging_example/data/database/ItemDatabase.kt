@@ -1,9 +1,10 @@
-package com.tistory.mybstory.room_livedata_paging_example
+package com.tistory.mybstory.room_livedata_paging_example.data.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.tistory.mybstory.room_livedata_paging_example.data.model.Item
 
 @Database(
     entities = [Item::class],

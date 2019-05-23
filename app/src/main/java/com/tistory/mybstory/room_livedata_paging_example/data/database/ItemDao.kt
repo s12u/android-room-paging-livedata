@@ -1,10 +1,10 @@
-package com.tistory.mybstory.room_livedata_paging_example
+package com.tistory.mybstory.room_livedata_paging_example.data.database
 
 import androidx.paging.DataSource
 import androidx.room.Dao
-import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.tistory.mybstory.room_livedata_paging_example.data.model.Item
 
 @Dao
 interface ItemDao {
