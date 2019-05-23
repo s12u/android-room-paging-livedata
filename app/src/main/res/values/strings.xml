@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">room-livedata-paging-example</string>
+    <string name="item_placeholder"> I\'m %1$d :D</string>
+</resources>
